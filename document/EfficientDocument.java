@@ -46,7 +46,7 @@ public class EfficientDocument extends Document {
 		for (String tok : tokens) {
 			if (isWord(tok)) {
 				numWords++;
-				numSyllables += this.countSyllables(tok);
+				numSyllables += countSyllables(tok);
 				if (current == tokens.size() - 1) {
 					numSentences++;
 				}
@@ -122,10 +122,6 @@ public class EfficientDocument extends Document {
 				new EfficientDocument(
 						"Lorem ipsum dolor sit amet, qui ex choro quodsi moderatius, nam dolores explicari forensibus ad."),
 				32, 15, 1);
-		/*
-		 * EfficientDocument dc = new EfficientDocument(
-		 * "many???  Senteeeeeeeeeences are"); dc.processText();
-		 */
 	}
 
 }
